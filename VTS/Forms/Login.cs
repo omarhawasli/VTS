@@ -53,7 +53,6 @@ namespace VTS
                         MainMenu main = new MainMenu();
                         main.Show();
                         this.Hide();
-                        // MessageBox.Show("Login Successfull");
                     }
                     else
                     {

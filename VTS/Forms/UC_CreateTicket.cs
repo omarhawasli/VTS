@@ -31,7 +31,6 @@ namespace VTS
 
         private void button1_Click(object sender, EventArgs e)
         {   
-            UC_Tickets tickets = new UC_Tickets();
             
             string vorname = textBox1.Text;
             string nachname = textBox2.Text;
@@ -39,11 +38,26 @@ namespace VTS
             double preis = Convert.ToDouble(textBox3.Text);
             string reihe = textBox5.Text;
             string land = textBox6.Text;
+            land.ToLower();
 
             Ticket neueTicket = new Ticket(vorname,nachname,preis,platz,reihe,land);
             DB.Create(neueTicket);
 
-            ShowForm(tickets);
+            if (DB.aktuellesLand == "germany")
+            {
+                UC_Germany germany = new UC_Germany();
+                ShowForm(germany);
+            }
+            else if(DB.aktuellesLand == "italy")
+            {
+                UC_Italy italy = new UC_Italy();
+                ShowForm(italy);
+            }
+            else
+            {
+                UC_USA usa = new UC_USA();
+                ShowForm(usa);
+            }
             
             
         }

@@ -37,6 +37,7 @@ namespace VTS
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Tickets));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -45,7 +46,6 @@ namespace VTS
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -63,8 +63,15 @@ namespace VTS
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1225, 905);
+            this.panel1.Size = new System.Drawing.Size(1224, 915);
             this.panel1.TabIndex = 0;
+            // 
+            // label
+            // 
+            this.label.Location = new System.Drawing.Point(271, 44);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(159, 69);
+            this.label.TabIndex = 22;
             // 
             // label2
             // 
@@ -113,19 +120,19 @@ namespace VTS
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.bearbeitenToolStripMenuItem, this.löschenToolStripMenuItem });
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(131, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(168, 64);
             // 
             // bearbeitenToolStripMenuItem
             // 
             this.bearbeitenToolStripMenuItem.Name = "bearbeitenToolStripMenuItem";
-            this.bearbeitenToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.bearbeitenToolStripMenuItem.Size = new System.Drawing.Size(167, 30);
             this.bearbeitenToolStripMenuItem.Text = "Bearbeiten";
             this.bearbeitenToolStripMenuItem.Click += new System.EventHandler(this.bearbeitenToolStripMenuItem_Click);
             // 
             // löschenToolStripMenuItem
             // 
             this.löschenToolStripMenuItem.Name = "löschenToolStripMenuItem";
-            this.löschenToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.löschenToolStripMenuItem.Size = new System.Drawing.Size(167, 30);
             this.löschenToolStripMenuItem.Text = "Löschen";
             this.löschenToolStripMenuItem.Click += new System.EventHandler(this.löschenToolStripMenuItem_Click);
             // 
@@ -159,24 +166,16 @@ namespace VTS
             this.label1.Size = new System.Drawing.Size(417, 97);
             this.label1.TabIndex = 3;
             // 
-            // label
-            // 
-            this.label.Location = new System.Drawing.Point(271, 44);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(159, 69);
-            this.label.TabIndex = 22;
-            // 
             // UC_Tickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(15, 15);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UC_Tickets";
-            this.Size = new System.Drawing.Size(1227, 907);
+            this.Size = new System.Drawing.Size(1241, 933);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
